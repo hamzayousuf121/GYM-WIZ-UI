@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        background-color: #f5f7fa;
+    }
+    #membership::placeholder {
+    color: white !important;
+    background-color: #28a745;
+}
+#label{
+     font-weight: bolder;
+  }
+  .powered{
+      border-top:10px solid black ;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+    @media only screen and (max-width: 600px) {
+  body {
+    background-color: #f5f7fa;
+  }
+  #label{
+      text-align: left !important;
+      float: left !important;
+  }
+}
+</style>
+<body>
+    <h1 class="text-center">Login form</h1>
+<div class="container">
+    <div class="row mb-3 ">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="registrationform ">Regitration type:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <select name="registrationform" class="custom-select">
+                <option>Gym Registration</option>
+                <option value="volvo">Volvo</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="usertype ">User Type:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <select name="usertype" class="custom-select" id="User Type:">
+                <option>User Type:</option>
+                <option value="">Single</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="membership">Membership Id:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="text" id="membership" class="form-control bg-success text-white" placeholder="015853" id="membership" >
+        </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="file">Photo:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="file" class=" form-control-file "  placeholder="choose file" id="file">
+            </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="name">Name:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="text" class="form-control" id="name" placeholder="Member Name" name="name">
+        </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3 ">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="email">Email:</label>
+        </div>
+        <div class="col-md-3">         
+        <div class="input-group">
+
+            <input type="email" class="form-control" id="email" placeholder="Your Email Address" name="email">
+            </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="date">Prefered Time:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+
+            <input type="date" class="form-control" id="date" placeholder="Time" name="date">
+        </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="cnic">Cnic/ Username/Passport:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+
+            <input type="number" class="form-control" id="cnic" placeholder="Please Enter Here" name="cnic">
+        </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="dob">DOB:</label>
+        </div>
+        <div class="col-md-3 ">
+            <div class="input-group">
+                <input type="date" class="form-control" id="dob" name="dob" style="
+                margin-right: -14px;">
+                <div class="input-group-append mt-2" style="right: 7px;
+                position: relative;
+                z-index: 3;">
+                    <span><i class="fa fa-calendar text-success"> </i></span>
+                </div>
+            </div>
+        </div>
+        
+    </div><hr />
+
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="gender">Gender:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <select name="gender" class="custom-select" >
+                <option>Please Select</option>
+                <option value="Male">Male</option>
+                <option value="female">female</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label"  for="occupation">Occupation:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="text" class="form-control" id="occupation" placeholder="Occupation" name="occupation">
+            </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="joiningdate">Joining Date:</label>
+        </div>
+        <div class="col-md-3 ">
+            <div class="input-group">
+            <input type="date" class="form-control" id="joiningdate" name="joiningdate" style="
+            margin-right: -14px;">
+                <div class="input-group-append mt-2" style="right: 7px;
+                position: relative;
+                z-index: 3;">
+                    <span><i class="fa fa-calendar text-success"> </i></span>
+                </div>
+           </div>
+        </div>
+        
+    </div><hr /> 
+ 
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="address">Address:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+        </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3 ">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="ptcl">Ptcl:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="number" class="form-control" id="ptcl" placeholder="PTCL" name="ptcl">
+        </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3 ">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="contact">Contact No:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="number" class="form-control" id="contact" placeholder="Mobile/Phone"  name="contact">
+        </div>
+        </div>
+    </div><hr />
+
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="emergencycontact">Emergency Contact:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="number" class="form-control" id="emergencycontact" placeholder="Emergency Contact" name="emergencycontact">
+        </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="gender">Personal Trainer:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <select name="gender" class="custom-select">
+                <option>Select Trainer</option>
+                <option value="Male">Male</option>
+                <option value="female">female</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+        </div>
+    </div><hr />
+
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="gender">Can do Member Login:</label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <select name="gender" class="custom-select">
+                <option>Please Select</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+        </div>
+    </div><hr />
+
+    <div class="row mb-3">
+        <div class="offset-md-2 col-md-3 text-right mt-2">
+            <label id="label" for="emergencycontact"></label>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+            <input type="submit" value="Save Changes" class="btn btn-success btn-block" >
+        </div>
+</div>
+    </div>
+    </form>
+    </div>
+    </div><hr>
+    <div class="powered">
+        <h3 class="text-center">GYM Managment System</h3>
+        <h5  class="text-center">Powered By:</h5>
+        <img src="./Logo-Cybeinc.png" class="center"/>
+    </div>
+ 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
